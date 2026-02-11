@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanu (Ainoor) · Subho · vintage love</title>
+  <style>
+    /* -------------------------------
+       VINTAGE DREAM · FOR TANU ❤️🎀
+    ------------------------------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fef7e9;
+      background-image: 
+        linear-gradient(rgba(200, 170, 140, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 170, 140, 0.1) 1px, transparent 1px);
+      background-size: 40px 40px;
+      font-family: 'Courier New', 'Times New Roman', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+      color: #3e2c23;
+    }
+
+    .vintage-frame {
+      max-width: 1100px;
+      width: 100%;
+      background: rgba(255, 245, 235, 0.7);
+      backdrop-filter: blur(3px);
+      box-shadow: 0 20px 40px rgba(60, 40, 20, 0.15), 
+                  0 4px 12px rgba(0,0,0,0.05),
+                  inset 0 0 0 1px rgba(255, 245, 235, 0.9);
+      border: 1px solid #d8c4b0;
+      padding: 2.5rem 2rem;
+      border-radius: 32px 8px 32px 8px;
+      position: relative;
+    }
+
+    .vintage-frame::after {
+      content: "✧  ☽  ✧";
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      font-size: 1.8rem;
+      color: #ab8c7a;
+      opacity: 0.25;
+      letter-spacing: 12px;
+      transform: rotate(-5deg);
+      pointer-events: none;
+    }
+
+    .handwritten-title {
+      font-size: 2.5rem;
+      font-weight: 400;
+      font-family: 'Georgia', 'Times', cursive;
+      text-align: center;
+      color: #6e4f3a;
+      letter-spacing: 2px;
+      word-spacing: 8px;
+      text-shadow: 2px 2px 0 rgba(230, 200, 180, 0.6);
+      border-bottom: 2px dashed #c9ad9a;
+      padding-bottom: 0.75rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .handwritten-title span {
+      background: #ffe9dd;
+      padding: 0.2rem 1rem;
+      border-radius: 40px 8px 40px 8px;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin-top: 8px;
+      border: 1px solid #c4a392;
+    }
+
+    /* ---------- 😭✨ BEAUTIFUL PHOTO ANIMATIONS ✨😭 ---------- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.8rem;
+      margin: 2.5rem 0 2rem;
+      padding: 0.5rem;
+    }
+
+    .photo-card {
+      background: #fefcf5;
+      padding: 0.8rem 0.8rem 1.2rem 0.8rem;
+      box-shadow: 8px 8px 0 rgba(170, 140, 120, 0.2);
+      border: 1px solid #dac0ac;
+      border-radius: 4px 20px 4px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      animation: floatVintage 4s infinite ease-in-out;
+      transition: all 0.3s ease;
+    }
+
+    /* Each photo floats differently */
+    .photo-card:nth-child(1) { animation-delay: 0s; animation-duration: 4.2s; }
+    .photo-card:nth-child(2) { animation-delay: 0.3s; animation-duration: 4.7s; }
+    .photo-card:nth-child(3) { animation-delay: 0.6s; animation-duration: 5.1s; }
+    .photo-card:nth-child(4) { animation-delay: 0.9s; animation-duration: 4.5s; }
+    .photo-card:nth-child(5) { animation-delay: 1.2s; animation-duration: 5.4s; }
+    .photo-card:nth-child(6) { animation-delay: 1.5s; animation-duration: 4.9s; }
+    .photo-card:nth-child(7) { animation-delay: 1.8s; animation-duration: 5.6s; }
+
+    @keyframes floatVintage {
+      0% { transform: translateY(0px) rotate(0.5deg); }
+      50% { transform: translateY(-8px) rotate(1deg); }
+      100% { transform: translateY(0px) rotate(0.5deg); }
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 4px 16px 4px 16px;
+      border: 2px solid #eadbd0;
+      filter: sepia(0.5) contrast(0.95) brightness(1.05);
+      transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      animation: breatheGlow 5s infinite alternate;
+    }
+
+    @keyframes breatheGlow {
+      0% { filter: sepia(0.5) contrast(0.95) brightness(1.05); box-shadow: 0 0 0 rgba(200, 160, 140, 0); }
+      100% { filter: sepia(0.3) contrast(1.02) brightness(1.15); box-shadow: 0 0 15px rgba(200, 140, 120, 0.3); }
+    }
+
+    .photo-card:hover {
+      animation-play-state: paused;
+      transform: scale(1.03) rotate(0deg) !important;
+      box-shadow: 15px 15px 0 rgba(120, 80, 60, 0.2), 0 0 25px rgba(255, 200, 180, 0.5);
+      border-color: #b38670;
+    }
+
+    .photo-card:hover img {
+      filter: sepia(0.2) contrast(1.05) brightness(1.2);
+      animation-play-state: paused;
+      border-color: #c49a81;
+    }
+
+    .photo-card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-radial-gradient(circle at 20% 30%, rgba(255,255,240,0.05) 0px, transparent 2px);
+      pointer-events: none;
+      opacity: 0.3;
+      animation: grainShift 8s infinite linear;
+      border-radius: 4px 20px 4px 20px;
+    }
+
+    @keyframes grainShift {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 20% 30%; }
+    }
+
+    .polaroid-caption {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      font-family: 'Courier New', monospace;
+      color: #6f4e3a;
+      letter-spacing: 1.5px;
+      border-top: 1px dotted #bda797;
+      padding-top: 8px;
+      width: 100%;
+      text-align: center;
+      animation: captionFade 3s infinite alternate;
+    }
+
+    @keyframes captionFade {
+      0% { opacity: 0.8; letter-spacing: 1.5px; }
+      100% { opacity: 1; letter-spacing: 2.2px; }
+    }
+
+    /* --- LOVE LETTER & NOTE SECTION --- */
+    .letter-container {
+      background: #fff9f1;
+      padding: 2.2rem 1.8rem;
+      margin: 2.8rem 0 1.8rem;
+      border: 1px solid #e4cfc1;
+      border-left: 6px solid #dbb7a2;
+      box-shadow: inset 0 0 0 2px #fef3ea, inset 0 0 0 4px #fffcf7;
+      font-family: 'KaiTi', 'Georgia', 'Brush Script MT', cursive;
+      border-radius: 0 24px 0 24px;
+    }
+
+    .letter-content {
+      background: repeating-linear-gradient(
+        rgba(235, 215, 200, 0.2) 0px,
+        rgba(235, 215, 200, 0.2) 2px,
+        transparent 2px,
+        transparent 28px
+      );
+      line-height: 32px;  
+      font-size: 1.25rem;
+      color: #3b2c22;
+      font-weight: 450;
+      text-shadow: 0.5px 0.5px 0 white;
+      padding: 0.4rem 0.8rem;
+      white-space: pre-wrap;
+    }
+
+    .emoji-large {
+      font-size: 1.8rem;
+      margin-right: 6px;
+      animation: heartBeat 2s infinite;
+    }
+
+    @keyframes heartBeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .signature {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2.2rem;
+      text-align: right;
+      margin-top: 0.8rem;
+      color: #7a5a48;
+      border-top: 1px dashed #bfa395;
+      padding-top: 0.8rem;
+    }
+
+    /* --- 😭✨ CUTE ADMIRATION NOTE — HER BEAUTY ✨😭 --- */
+    .beauty-note {
+      background: #fff3ea;
+      border: 1px solid #e2c1ae;
+      border-radius: 50px 8px 50px 8px;
+      padding: 1.8rem 2rem;
+      margin: 2rem 0 1rem;
+      box-shadow: inset 0 0 0 2px #fff9f2, 6px 6px 0 rgba(160, 120, 100, 0.1);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      position: relative;
+    }
+
+    .beauty-note h3 {
+      font-size: 1.8rem;
+      color: #6e3f2c;
+      margin-bottom: 1rem;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+      border-bottom: 1px solid #dcb6a0;
+      padding-bottom: 0.8rem;
+    }
+
+    .beauty-note p {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      color: #4d3327;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .beauty-note span {
+      display: inline-block;
+      animation: sparkle 2s infinite;
+    }
+
+    @keyframes sparkle {
+      0% { opacity: 0.7; transform: scale(1); }
+      100% { opacity: 1; transform: scale(1.1); text-shadow: 0 0 8px #ffc2a1; }
+    }
+
+    /* --- MUSIC BOX --- */
+    .music-box {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      gap: 16px;
+      background: rgba(255, 235, 220, 0.5);
+      padding: 12px 20px;
+      border-radius: 40px 8px 40px 8px;
+      border: 1px solid #cdaa94;
+      color: #5a3f33;
+    }
+
+    .floating-heart {
+      font-size: 1.6rem;
+      display: inline-block;
+      animation: float 3s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .credit {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #8e7262;
+      letter-spacing: 4px;
+      border-top: 1px dotted #d6bcad;
+      padding-top: 24px;
+    }
+
+    @media (max-width: 600px) {
+      .vintage-frame { padding: 1.5rem; }
+      .handwritten-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="vintage-frame">
+
+    <!-- ✦ TITLE — TANU & SUBHO ✦ -->
+    <div class="handwritten-title">
+      𓆸 for my Tanu (Ainoor) 𓆸
+      <br><span>🎀  Subho’s heart, all yours — my Wifey  🎀</span>
+    </div>
+
+    <!-- === 😭✨ 7 PHOTOS — FLOATING, GLOWING, BREATHING ✨😭 === -->
+    <div class="gallery">
+      <!-- photo 1 -->
+      <div class="photo-card">
+        <img src="tanu1.jpg" alt="Tanu — the moment I fell">
+        <div class="polaroid-caption">🌸 2 years ago · crush</div>
+      </div>
+      <!-- photo 2 -->
+      <div class="photo-card">
+        <img src="tanu2.jpg" alt="Tanu — you looked away">
+        <div class="polaroid-caption">🌼 you didn't know yet</div>
+      </div>
+      <!-- photo 3 -->
+      <div class="photo-card">
+        <img src="tanu3.jpg" alt="Tanu — golden hour">
+        <div class="polaroid-caption">✨ golden light on you</div>
+      </div>
+      <!-- photo 4 -->
+      <div class="photo-card">
+        <img src="tanu4.jpg" alt="Tanu — candid smile">
+        <div class="polaroid-caption">🍂 that day, your smile</div>
+      </div>
+      <!-- photo 5 -->
+      <div class="photo-card">
+        <img src="tanu5.jpg" alt="Tanu — shy">
+        <div class="polaroid-caption">💭 made me shy</div>
+      </div>
+      <!-- photo 6 -->
+      <div class="photo-card">
+        <img src="tanu6.jpg" alt="Tanu — 5 months ago">
+        <div class="polaroid-caption">🌙 the day you said yes</div>
+      </div>
+      <!-- photo 7 -->
+      <div class="photo-card">
+        <img src="tanu7.jpg" alt="Tanu — my Wifey">
+        <div class="polaroid-caption">🎀 my Wifey · my forever 🎀</div>
+      </div>
+    </div>
+
+    <!-- === 💌 HANDWRITTEN LOVE LETTER 💌 === -->
+    <div class="letter-container">
+      <div class="letter-content">
+        <p><span class="emoji-large">💌</span> My dearest Tanu (Ainoor), my Wifey 🎀,</p>
+        <p>For two years, you were the beautiful dream I couldn’t look away from — my secret crush, my morning muse. And now, for five months, you’ve been my Wifey, my heart’s home. 🥺🏡✨🎀</p>
+        <p>I still remember the first time I saw you. Time didn’t stop — it just became softer, warmer. You had this light, like vintage film; golden and unforgettable. Every photo of you holds a whole season of feelings. I looked at you from afar, wrote your name in my notebook, and hoped. 💘</p>
+        <p>Now I get to hold your hand, call you mine, and smile at you without looking away. Tanu — Ainoor — you are my yesterday’s wish and today’s sweetest truth. These 7 photos are pieces of my memory, but you in my life is the whole gallery. 🌷🎞️</p>
+        <p>I made this little world for you — with our song, ‘Those Eyes’, and papery textures, and all the vintage warmth you love. Because loving you feels like an old poem, a sepia photograph, a melody that never fades.</p>
+        <p>Yours, in every lifetime,<br><span class="signature">Subho 🩵</span></p>
+      </div>
+    </div>
+
+    <!-- === 😭✨ CUTE ADMIRATION NOTE — ALL ABOUT HER BEAUTY ✨😭 === -->
+    <div class="beauty-note">
+      <h3>✨ for my Wifey's beauty ✨🎀</h3>
+      <p>
+        <span>🥺</span> Tanu, I don't think you realize — <br>
+        Your eyes hold the same warmth as golden hour. <br>
+        Your smile could make sepia forget it's an old color. <br>
+        Every photo of you looks like poetry that forgot to rhyme, <br>
+        because it doesn't need to. <br><br>
+        You are not just beautiful. <br>
+        You are the reason vintage exists — <br>
+        soft, timeless, and impossible to replicate. <br><br>
+        And somehow, you're my Wifey. 😭❤️🎀
+      </p>
+    </div>
+
+    <!-- === 🎶 BG MUSIC: "THOSE EYES" — UPLOAD YOUR MP3 === -->
+    <div class="music-box">
+      <span class="floating-heart">🎶</span>
+      <span style="font-family: 'Courier New'; font-weight: 600;">🎵 Those Eyes · New West 🎵</span>
+      <audio controls autoplay loop>
+        <source src="those-eyes.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <span>🎧 ✨</span>
+    </div>
+
+    <!-- === VINTAGE FOOTER === -->
+    <div class="credit">
+      <span>☕️  🕯️  for Tanu, my Wifey 🎀 — 2 years of crush, 6 months of love  🕯️  ☕️</span>
+      <br><span style="font-size: 1.2rem;">🧁     every photo floats because you make my heart float too     🧁</span>
+      <br><span style="font-size: 1.1rem; color: #b3584a;">🎀 Wifey · forever yours, forever mine 🎀</span>
+    </div>
+
+  </div>
+
+  <script>
+    // Small rotation on load
+    const cards = document.querySelectorAll('.photo-card');
+    cards.forEach((card, index) => {
+      const rot = (index % 2 === 0 ? 0.7 : -0.5) + (Math.random() * 0.6 - 0.3);
+      card.style.transform = `rotate(${rot}deg)`;
+    });
+
+    console.log("%c😭✨ TANU — MY WIFEY 🎀 — THIS WHOLE WEBSITE IS FOR YOU ✨😭", "background: #fbe9e0; color: #6e4f3a; font-size: 14px; padding: 8px;");
+    console.log("%c💌 SUBHO MADE THIS WITH ALL HIS HEART FOR HIS WIFEY 💌", "background: #f2dfd1; color: #4f352b; font-size: 13px;");
+    console.log("%c✨ YOU ARE THE MOST BEAUTIFUL PART OF HIS STORY, WIFEY ✨🎀", "background: #ffe9dd; color: #7a5a48; font-size: 12px;");
+  </script>
+</body>
+</html>
